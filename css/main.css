@@ -123,6 +123,7 @@ body{
     font-size: 24px;
     padding: 16px 56px;
     background-color: #fff;
+    color: var(--main-color);
 }
 
 .burger {
@@ -569,14 +570,22 @@ body{
     padding-top: 6px;
 }
 
+.about__mobile-h2 {
+    display: none;
+}
+
+
 @media screen and (max-width: 992px){
     .skills__grid{
         gap: 13px;
     }
 
-    .skills .text-h2 {
+    .text-h2{
         font-size: 36px;
         line-height: 2.22em;
+    }
+
+    .skills .text-h2 {
         padding: 50px 0;
     }
 
@@ -704,9 +713,12 @@ body{
         padding: 20px;
     }
 
-    .skills .text-h2 {
+    .text-h2{
         font-size: 30px;
         line-height: 2.67em;
+    }
+
+    .skills .text-h2 {
         padding-bottom: 35px;
     }
 
@@ -762,9 +774,12 @@ body{
         "four";
     }
 
-    .skills .text-h2{
+    .text-h2{
         font-size: 30px;
         line-height: 2.67em;
+    }
+
+    .skills .text-h2{
         padding: 93px 0 32px;
     }
 
@@ -790,9 +805,12 @@ body{
 
 @media screen and (max-width: 320px){
 
-    .skills .text-h2{
+    .text-h2{
         font-size: 24px;
         line-height: 3.33em;
+    }
+
+    .skills .text-h2{
         padding: 43px;
     }
 
@@ -821,5 +839,168 @@ body{
     }
     .listening-img img{
         max-width: 232px;
+    }
+}
+
+/* About us */
+
+.about {
+}
+.about__inner {
+    display: flex;
+    padding-top: 253px;
+    justify-content: space-between;
+}
+.about__inner-content {
+    padding-top: 30px;
+    max-width: 635px;
+    width: 100%;
+}
+.about .text-h2 {
+    text-transform: capitalize;
+}
+
+.about__inner-content > .text-p{
+    margin-top: 21px;
+}
+
+.text-p {
+    font-size: 20px;
+    color: #8f95a5;
+}
+.content__flex {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.num {
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--main-color);
+}
+.about .img-container {
+    margin: auto 0;
+}
+
+@media screen and (max-width: 992px) {
+    
+    .about__inner {
+        display: flex;
+        padding: 84px 5px 0;
+        align-items: flex-end;
+    }
+    .about__inner-content {
+        padding-top: 30px;
+        max-width: 512px;
+    }
+
+    .about__inner-content > .text-p{
+        margin-top: 10px;
+    }
+
+    .text-p {
+        font-size: 16px;
+    }
+    .content__flex {
+        max-width: 435px;
+        margin-top: 25px;
+    }
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .num {
+        font-size: 30px;
+    }
+    .about .img-container {
+        max-width: 336px;
+    }
+} 
+@media screen and (max-width: 767px) {
+    
+    .about__inner {
+        display: flex;
+        padding: 84px 15px 0;
+        align-items: flex-end;
+    }
+    .about__inner-content {
+        padding-top: 30px;
+        max-width: 321px;
+    }
+
+    .about__inner-content > .text-p{
+        margin-top: 10px;
+    }
+
+    .about .text-p{
+        margin: 0;
+    }
+
+    .text-p {
+        font-size: 14px;
+    }
+    .content__flex {
+        max-width: 435px;
+        margin-top: 27px;
+    }
+
+    .num {
+        font-size: 22px;
+    }
+    .about .img-container {
+        max-width: 295px;
+    }
+} 
+
+@media screen and (max-width: 575px) {
+    .about__inner{
+        padding-top: 75px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__inner-content .text-h2{
+        display: none;
+    }
+
+    .about__mobile-h2{
+        display: block;
+        order: -2;
+    }
+    .about .img-container {
+        order: -1;
+        max-width: 352px;
+        margin-top: 20px;
+    }
+
+    .about__inner-content {
+        margin-top: 20px;
+        max-width: none;
+        text-align: center;
+    }
+
+    .content__flex{
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .about__inner{
+        padding: 85px 0 0;
+    }
+    .about__inner-content{
+        margin-top: 10px;
+    }
+
+    .text-p{
+        font-size: 13px;
     }
 }
