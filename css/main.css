@@ -447,6 +447,7 @@ body{
     font-weight: 600;
     font-size: 48px;
     line-height: 1.67em;
+    text-transform: capitalize;
 }
 
 .skills .text-h2{
@@ -856,9 +857,6 @@ body{
     max-width: 635px;
     width: 100%;
 }
-.about .text-h2 {
-    text-transform: capitalize;
-}
 
 .about__inner-content > .text-p{
     margin-top: 21px;
@@ -1002,5 +1000,116 @@ body{
 
     .text-p{
         font-size: 13px;
+    }
+}
+
+/* Pricing */
+
+.pricing {
+}
+.pricing__inner {
+    margin: 180px 0;
+}
+.pricing .text-h2 {
+    text-align: center;
+}
+.pricing-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+.pricing-item {
+    max-width: 440px;
+    margin-top: 55px;
+}
+
+.pricing .text-h3 {
+    margin: 35px 0 20px;
+}
+
+
+.pricing-item .text-p {
+    margin-bottom: 60px;
+}
+.price {
+    background-color: #EEEEEE;
+    display: flex;
+    max-width: 240px;
+    align-items: center;
+    gap: 10px;
+    padding: 1px 8px 1px 12px;
+    border-radius: 5px;
+}
+.cost {
+    font-size: 30px;
+    color: var(--main-color);
+}
+.pricing-p {
+    font-size: 18px;
+    color: #546269;
+}
+
+.pricing-item:nth-child(1) .img-container {
+    max-width: 311px;
+    margin-left: 20px;
+}
+
+.pricing-item:nth-child(1) .text-p {
+    margin-bottom: 27px;
+}
+
+.pricing-item:nth-child(2) .img-container {
+    max-width: 391px;
+    margin-top: 30px;
+}
+
+.pricing-item:nth-child(2){
+    padding-left: 25px;
+}
+
+.pricing-item:nth-child(3) .img-container {
+    max-width: 340px;
+    margin-left: 50px;
+}
+
+.pricing-item:nth-child(3) .text-h3 {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1400px){
+    .pricing-flex{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .price{
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 575px){
+    .price{
+        padding: 6px 12px;
+        max-width: 205px;
+    }
+    .cost{
+        font-size: 22px;
+    }
+    .pricing-p{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 575px){
+    .pricing-item .img-container{
+        margin: 0;
+    }
+    .pricing-item:nth-child(3) .img-container {
+        margin-left: 0px;
+    }
+    .pricing-item:nth-child(2) {
+        padding-left: 0px;
     }
 }
